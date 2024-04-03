@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ma'lumotlar Ro'yxati</title>
+</head>
+<body>
+    <h1>Ma'lumotlar Ro'yxati</h1>
+    <ul>
+        {% for i in items %}
+            <li>{{ "Ism:" }} {{ i.first_name }},   {{ 'Familya:' }} {{ i.last_name }},    {{ "Telefon raqam:" }} {{ i.numbers }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
